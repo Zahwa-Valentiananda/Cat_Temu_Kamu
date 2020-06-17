@@ -1,0 +1,51 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Daftar Dulu Yuk</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+  <div class="signup-logo">
+    <img src="assets/img/cat2.png" alt="Ionic Logo">
+    <p align="center" style="font-family: Catcafe;color: #ca4ee9;font-size: larger;">Cat-Temu Kamu</p>
+  </div>
+
+  <form #signupForm="ngForm" novalidate>
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label position="stacked" color="primary">Nama user</ion-label>
+        <ion-input [(ngModel)]="signup.username" name="username" type="text" #username="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <ion-text color="danger">
+        <p [hidden]="username.valid || submitted == false" class="ion-padding-start">
+          nama tidak boleh kosong ya
+        </p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">Password</ion-label>
+        <ion-input [(ngModel)]="signup.password" name="password" type="password" #password="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <ion-text color="danger">
+        <p [hidden]="password.valid || submitted == false" class="ion-padding-start">
+          password tidak boleh kosong ya
+        </p>
+      </ion-text>
+    </ion-list>
+
+    <div class="ion-padding">
+      <ion-button (click)="presentLoading();onSignup(signupForm)" type="submit" expand="block">Buat akun</ion-button>
+    </div>
+  </form>
+
+</ion-content>

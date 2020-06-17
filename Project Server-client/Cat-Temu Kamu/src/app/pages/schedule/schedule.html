@@ -1,0 +1,42 @@
+<ion-header>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cat-Temu Kamu</ion-title>
+  </ion-toolbar>
+
+  <!-- <ion-toolbar>
+    <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Search"></ion-searchbar>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content [class.dark-theme]="dark">
+  <!-- <p> </p>
+  <div align="center" class="signup-logo">
+    <img  height="150 px" width="170 px" src="assets/img/cat2.png"/>
+    <ion-card-title><p align="center" style="font-family: Catcafe;color: #ca4ee9;font-size: larger;">Cat-Temu Kamu</p></ion-card-title>
+  </div> -->
+
+  <!-- <ion-slides>
+    <ion-slide *ngFor ="let speaker of speakers">
+      <ion-card>
+        <p>weew</p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides> -->
+
+  <ion-content class="card-background-page">
+    <ion-card>
+      <img src="assets/img/cat/homebg.jpg"/>
+      <div class="card-title">Selamat datang di Cat-Temu Kamu</div>
+    </ion-card>
+  </ion-content>
+
+  <ion-list-header [hidden]="shownSessions > 0">
+    No Sessions Found
+  </ion-list-header>
+</ion-content>

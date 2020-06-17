@@ -1,0 +1,7 @@
+{
+  "name": "Cat-Temu Kamu",
+  "type": "angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

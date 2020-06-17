@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tentang</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover($event)">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="about-header">
+    <img src="assets/img/cat2.png" alt="ionic logo">
+  </div>
+  <div class="about-info">
+    <h4 class="ion-padding-start">Cat-Temu Kamu apps</h4>
+
+    <ion-list lines="none">
+      <ion-item>
+        <ion-icon name="pin" slot="start"></ion-icon>
+        <ion-label position="stacked">Location</ion-label>
+        <ion-select>
+          <ion-select-option value="batam1" selected>Batam Politeknik Negeri Batam</ion-select-option>
+          <ion-select-option value="batam2">Batam, Komplek Citra</ion-select-option>
+          <ion-select-option value="karimun">Karimun, Costal area</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <p class="ion-padding-start ion-padding-end">
+     Aplikasi Cat-Temu Kamu ini adalah aplikasi yang berguna untuk memberikan kesempatan kepada
+     para pecinta kucing untuk bisa mengadopsi kucing - kucing di daerah batam.
+    </p>
+  </div>
+</ion-content>

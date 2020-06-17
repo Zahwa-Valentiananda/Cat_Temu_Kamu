@@ -1,0 +1,95 @@
+.scroll {
+  background: #ededed;
+}
+
+.speaker-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-card ion-card-header {
+  padding: 0;
+}
+
+.speaker-card ion-card-header .item {
+  padding: 4px 16px;
+}
+
+.speaker-card ion-card-content {
+  flex: 1 1 auto;
+
+  padding: 0;
+}
+
+
+
+// ion-slides {
+//   margin: 0 0 0 0 !important;
+//         padding: 0 0 0 0 !important; 
+// }
+
+// ion-card.test {
+// border-radius: 0.5em;
+// color: white;
+// width: 500%;
+// height: 500%;
+// background:linear-gradient(235deg, red,rgb(235, 170, 170));
+// }
+
+img.slide {
+  height:12em;
+  width: 10em;
+}
+
+ion-list-header{
+  font-weight: bold;
+}
+
+
+
+.card-background-page {
+
+  ion-card.slide{
+    border-radius: 0.5em;
+    position: relative;
+    text-align: center;
+    margin: 1em;
+  }
+
+  ion-card.test{
+    border-radius: 0em;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+  }
+
+  ion-card.header{
+    border-radius: 0em;
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    font-family: NexaB;
+  }
+
+  .card-title {
+    position: absolute;;
+    top: 80%;
+    font-size: 2.5em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+  }
+
+}

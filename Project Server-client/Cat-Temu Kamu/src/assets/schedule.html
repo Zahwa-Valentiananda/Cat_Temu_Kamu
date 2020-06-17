@@ -1,0 +1,63 @@
+<ion-header>
+</ion-header>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cat-Temu Kamu</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]="queryText" (ionChange)="updateSchedule()" placeholder="Search"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [class.dark-theme]="dark">
+  <p> </p>
+  <div align="center" class="signup-logo">
+    <img  height="150 px" width="170 px" src="assets/img/cat2.png"/>
+    <ion-card-title><p align="center" style="font-family: Catcafe;color: #ca4ee9;font-size: larger;">Cat-Temu Kamu</p></ion-card-title>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" size-md="6">
+        <ion-card color="primary">
+          <ion-card-header>
+            <ion-card-title align="center">Cat-find</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6" size-md="6">
+        <ion-card color="primary">
+          <ion-card-header>
+            <ion-card-title align="center">Peta</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6" size-md="6">
+        <ion-card color="primary">
+          <ion-card-header>
+            <ion-card-title align="center">Akun</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6" size-md="6">
+        <ion-card color="primary">
+          <ion-card-header>
+            <ion-card-title align="center">Tentang</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list-header [hidden]="shownSessions > 0">
+    No Sessions Found
+  </ion-list-header>
+</ion-content>

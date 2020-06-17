@@ -1,0 +1,54 @@
+$categories: (
+  ionic: var(--ion-color-primary),
+  angular: #ac282b,
+  communication: #8e8d93,
+  tooling: #fe4c52,
+  services: #fd8b2d,
+  design: #fed035,
+  workshop: #69bb7b,
+  food: #3bc7c4,
+  documentation: #b16be3,
+  navigation: #6600cc
+);
+
+@each $track, $value in map-remove($categories) {
+  ion-item-sliding[track='#{$track}'] ion-label {
+    border-left: 2px solid $value;
+    padding-left: 10px;
+  }
+}
+
+// ion-card{
+//   --background: linear-gradient(#ca4ee9, #7f3891);
+// }
+
+.card-background-page {
+
+  ion-card {
+    border-radius: 0em;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    margin: -15px;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+  }
+
+}
